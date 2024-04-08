@@ -1,5 +1,6 @@
 # Local .terraform directories
 **/.terraform/*
+.keypair.tf/*
 
 # .tfstate files
 *.tfstate
