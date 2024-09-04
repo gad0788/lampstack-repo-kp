@@ -5,7 +5,7 @@ resource "tls_private_key" "lightsail_key" {
 }
 # Create the Key Pair
 resource "aws_lightsail_key_pair" "lightsail_key2" {
-  name   = "lamp"
+  name       = "lamp"
   public_key = tls_private_key.lightsail_key.public_key_openssh
 }
 # Save file
